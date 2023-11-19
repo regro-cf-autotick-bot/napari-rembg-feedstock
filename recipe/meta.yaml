@@ -1,5 +1,5 @@
 {% set name = "napari-rembg" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-rembg-{{ version }}.tar.gz
-  sha256: d9d783029d488e6bff7278715f637d127403b046f698ef7d2a50e7ee5b46b476
+  sha256: 2dc7a01279cf4b5044c96b66814cb1a22b715ec92fdef7cbe3d18308b6e6ff5c
 
 build:
   noarch: python
