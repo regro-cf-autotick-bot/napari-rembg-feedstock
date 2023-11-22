@@ -23,9 +23,13 @@ requirements:
   run:
     - magicgui
     - napari >=0.4.16
+    - numpy
+    - pillow
     - python >=3.8
     - qtpy
     - rembg
+    - scikit-image
+
 
 test:
   imports:
@@ -42,7 +46,7 @@ about:
   summary: AI-based foreground extraction in scientific and natural images.
   license: BSD-3-Clause
   license_file: LICENSE
-  dev_url: https://github.com/MalloryWittwer/napari-rembg
+  dev_url: https://github.com/EPFL-Center-for-Imaging/napari-rembg
 
 extra:
   recipe-maintainers:
