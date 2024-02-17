@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: AI-based foreground extraction in scientific and natural images.
 
-Development: https://github.com/MalloryWittwer/napari-rembg
+Development: https://github.com/EPFL-Center-for-Imaging/napari-rembg
 
 Current build status
 ====================
