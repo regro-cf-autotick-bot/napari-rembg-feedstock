@@ -28,8 +28,8 @@ requirements:
     - python >=3.8
     - qtpy
     - rembg
+    - requests
     - scikit-image
-
 
 test:
   imports:
