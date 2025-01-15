@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-rembg-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-rembg-{{ version }}.tar.gz
   sha256: 2d44d3b5804cdb52d3cd7341d6f2b71f60a8bceb94b535ee046695ca1049bb46
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=42.0.0
     - wheel
   run:
@@ -25,7 +25,7 @@ requirements:
     - napari >=0.4.16
     - numpy
     - pillow
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy
     - rembg
     - requests
@@ -40,6 +40,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-rembg
